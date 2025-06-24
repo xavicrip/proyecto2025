@@ -13,32 +13,32 @@
 
             <div>
                 <label class="block">Código</label>
-                <input type="number" name="codigo" require value="{{old('codigo', $entidad->codigo)}}">
+                <input type="number" name="codigo" require value="{{ old('codigo', $entidad->codigo) }}">
             </div>
 
              <div>
                 <label class="block">Subsector</label>
-                <input type="text" name="subSector" require value="{{old('subSector', $entidad->subSector)}}" >
+                <input type="text" name="subSector" require value="{{ old('subSector', $entidad->subSector) }}" >
             </div>
 
              <div>
                 <label class="block">Nivel de Gobierno</label>
-                <input type="text" name="nivelGobierno" require value="{{old('nivelGobierno', $entidad->nivelGobierno)}}">
+                <input type="text" name="nivelGobierno" require value="{{ old('nivelGobierno', $entidad->nivelGobierno) }}">
             </div>
 
              <div>
                 <label class="block">Estado</label>
-                <input type="text" name="estado" require value="{{old('estado', $entidad->estado)}}">
+                <input type="text" name="estado" require value="{{ old('estado', $entidad->estado) }}">
             </div>
 
              <div>
                 <label class="block">Fecha de Creación</label>
-                <input type="date" name="fechaCreacion" require value="{{old('fechaCreacion', $entidad->fechaCreacion)}}">
+                <input type="date" name="fechaCreacion" require value="{{ old('fechaCreacion', $entidad->fechaCreacion) }}">
             </div>
 
              <div>
                 <label class="block">Fecha de Actualización</label>
-                <input type="date" name="fechaActualizacion" require value="{{old('fechaActualizacion', $entidad->fechaActualizacion)}}">
+                <input type="date" name="fechaActualizacion" require value="{{ old('fechaActualizacion', $entidad->fechaActualizacion) }}">
             </div>
 
             <button type="submit">Actualizar</button>

@@ -65,7 +65,7 @@ class EntidadController extends Controller
     {
         
         $request->validate([
-            'codigo'=> 'required|integer|unique:entidades,codigo', $id . 'idEntidad',
+            'codigo'=> 'required|integer|unique:entidades,codigo,'.$id.',idEntidad', // error
             'subSector'=> 'required|string',
             'nivelGobierno'=> 'required|string',
             'estado'=> 'required|string',
@@ -73,8 +73,8 @@ class EntidadController extends Controller
             'fechaActualizacion'=> 'nullable|date',
         ]);
 
-        $endidad = Entidad::findOrfail($id);
-        Entidad::update($request->all());
+        $entidad = Entidad::findOrfail($id);
+        $entidad->update($request->all()); // error
 
         return redirect()->route('entidades.index')->with('success', 'Entidad Actualizada Satisfactoriamente');
 
