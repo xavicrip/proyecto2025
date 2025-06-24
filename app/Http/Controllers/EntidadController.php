@@ -54,7 +54,7 @@ class EntidadController extends Controller
      */
     public function edit($id)
     {
-        $endidad = Entidad::findOrfail($id);
+        $entidad = Entidad::findOrfail($id);
         return view('entidades.edit', compact('entidad')); 
     }
 
