@@ -42,17 +42,17 @@
 
              <div>
                 <label class="block">Estado</label>
-                <input type="text" name="estado" require value="{{ old('estado') }}>
+                <input type="text" name="estado" require value="{{ old('estado') }}">
             </div>
 
              <div>
                 <label class="block">Fecha de Creación</label>
-                <input type="date" name="fechaCreacion" require value="{{ old('fechaCreacion') }}>
+                <input type="date" name="fechaCreacion" require value="{{ old('fechaCreacion') }}">
             </div>
 
              <div>
                 <label class="block">Fecha de Actualización</label>
-                <input type="date" name="fechaActualizacion" require value="{{ old('fechaActualizacion') }}>
+                <input type="date" name="fechaActualizacion" require value="{{ old('fechaActualizacion') }}">
             </div>
 
             <button type="submit">Guardar</button>

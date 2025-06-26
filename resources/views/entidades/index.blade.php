@@ -44,7 +44,13 @@
                     <td style="border: 1px solid #ccc; padding: 8px">{{$entidad->fechaCreacion}}</td>
                     <td style="border: 1px solid #ccc; padding: 8px">{{$entidad->fechaActualizacion}}</td>
                     <td style="border: 1px solid #ccc; padding: 8px">
-                        <a href="{{route('entidades.edit', $entidad->idEntidad)}}">Editar</a></td>
+                        <a href="{{route('entidades.edit', $entidad->idEntidad)}}">Editar</a>
+                        <form action="{{ route('entidades.destroy', $entidad->idEntidad) }}" method="POST" onsubmit="return confirm('Estas seguro de querer eliminar estas entidad?');">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
+                        </form>
+                        </td>
                     
 
 

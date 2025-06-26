@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Entidad extends Model
 {
+    use HasFactory;
+
     protected $primaryKey='idEntidad';
     public $timestamps = false;
     protected $table = 'entidades';
