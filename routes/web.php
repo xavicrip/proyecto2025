@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EntidadController;
+use App\Http\Controllers\ProgramaController;
+use App\Models\Programa;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +28,5 @@ Route::get('/home', function () {
 // Ruta para el modulo entidades
 Route::resource('entidades', EntidadController::class);
 
+// Ruta para el modulo entidades
+Route::resource('programas', ProgramaController::class);
